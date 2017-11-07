@@ -8,7 +8,7 @@ if (lower==1 and upper==1) or lower>upper:
 else:
 	if lower==1:
 		lower+=1
-	for i in range(lower,upper+1):
+	for i in xrange(lower,upper+1):
 		for j in range(2,i):
 			if(i%j==0):
 				print "%d is Not prime number" %i

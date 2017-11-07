@@ -8,6 +8,6 @@ for i in range(n):
 	price = input("Enter price :")
 	prices.insert(i,price)
 search_medicine = raw_input("Enter medicine name to be searched :")
-for i in range(n):
+for i in xrange(n):
 	if(medicine_names[i]==search_medicine):
 		print "Medicine "+medicine_names[i]+" found. \n Its price is, %f" %prices[i]
