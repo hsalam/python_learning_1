@@ -6,5 +6,6 @@ split_list = input_string.split()
 print "no: of words="+str(len(split_list))
 #print dir(a)		
 #to print words in descending 
+print "Printing words after reversing :"
 for split in reversed(input_string.split()):
 	print split
