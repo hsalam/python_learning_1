@@ -10,4 +10,4 @@ for i in range(n):
 search_medicine = raw_input("Enter medicine name to be searched :")
 for i in range(n):
 	if(medicine_names[i]==search_medicine):
-		print "Medicine "+medicine_names[i]+" found. \n Its price is, %d" %price
+		print "Medicine "+medicine_names[i]+" found. \n Its price is, %f" %prices[i]
