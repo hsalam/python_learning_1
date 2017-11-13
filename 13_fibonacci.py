@@ -1,18 +1,17 @@
 #!/usr/bin/python
 #Fibonacci series
 limit = input("Enter limit:")
-a=0
-b=1
-if limit==1:
-	print a
-elif limit==2:
-	print str(a)+"\n"+str(b)
-elif limit>2:
-	print str(a)+"\n"+str(b)
-	for i in range(2,limit):
-		temp=b
-		b=a+b
-		a=temp
-		print b
-else:
+a = 0
+b = 1
+count = 0
+if limit<=0:
  print "Can't print fibonacci series"
+elif limit==1:
+	print a
+else:
+	while(count<limit):
+		print str(a)
+		c = a+b
+		a = b
+		b = c
+		count+=1
