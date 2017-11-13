@@ -1,9 +1,9 @@
 #!/usr/bin/python
 if __name__ == '__main__':
     list_n = []
-    n = int(raw_input())
+    n = int(raw_input("Enter no: of operations:"))
     for j in xrange(n):
-        operation = raw_input().strip().split()
+        operation = raw_input("Enter operation name, index and value :").strip().split()
         if(operation[0]=="insert"):  
             list_n.insert(int(operation[1]),int(operation[2]))
         elif(operation[0]=="print"):
@@ -17,4 +17,6 @@ if __name__ == '__main__':
         elif(operation[0]=="pop"):
             list_n.pop()              
         elif(operation[0]=="reverse"):
-            list_n.reverse()    
+            list_n.reverse()
+        else:
+            print "There is no such operation"    
